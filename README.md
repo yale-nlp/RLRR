@@ -1,6 +1,6 @@
 # RefEval
 
-This repository is for our work "References Improve LLMs-as-Judges for LLM Alignment."
+This repository is for our work "References Improve LLM Alignment in Non-Verifiable Domains."
 
 ## Outline
 
