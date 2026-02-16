@@ -1,0 +1,31 @@
+<|im_start|>system
+You are a helpful assistant tasked with comparing how similar two outputs are to a ground-truth Reference Output. Your goal is to determine which output demonstrates closer similarity to the reference.
+<|im_start|>user
+You will be given Output (a) and Output (b) for the Instruction, and a ground-truth Reference Output.
+
+Rules for similarity comparison:
+(1) The Instruction determines what to match for - extraneous information or incorrect number of elements means no match, even if there are word overlaps
+(2) Surface-level similarities (word matches, format) are not considered matches if they don't satisfy the Instruction requirements
+(3) First understand how the ground-truth Reference Output properly follows the Instruction to see what a successful answer looks like, then compare how closely Output (a) and Output (b) match this proper instruction-following pattern
+(4) Extraneous content in an output that goes beyond what is present in the Reference Output should be discouraged
+
+Compare how each output relates to the ground-truth Reference Output. 
+Before comparison, identify which aspects of the ground-truth Reference Output are essential to match given the context of the Instruction. 
+Then determine which output demonstrates closer similarity to the ground-truth Reference Output.
+
+You should answer using ONLY "Output (a)" or "Output (b)". Do NOT output any other words.
+
+# Ground-truth Reference Output:
+{REFERENCE}
+
+# Instruction:
+{INSTRUCTION}
+
+# Output (a):
+{OUTPUT_1}
+
+# Output (b):
+{OUTPUT_2}
+
+# Which is more similar to the Reference Output, Output (a) or Output (b)? Your response should ONLY be either "Output (a)" or "Output (b)" verbatim:
+<|im_end|>
